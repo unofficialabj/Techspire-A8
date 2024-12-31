@@ -1,0 +1,32 @@
+#card {
+  border: 1px solid black;
+  padding: 20px;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  font-family: poppins;
+  gap: 25px;
+  border-radius: 16px;
+  background: wheat;
+}
+#details {
+  font-size: 22px;
+}
+
+span {
+  font-weight: 600;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  padding: 6px;
+}
+
+#container {
+  display: flex;
+  gap: 25px;
+}
+    

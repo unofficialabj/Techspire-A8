@@ -1,17 +1,32 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./style.css";
-import Card from "./Card";
+import Card from "./components/Card";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const data = [
+    {
+      name: "Anish",
+      address: "Ktm",
+      blood: "A+",
+      phone: "987654323456",
+      date: "2022-12-32",
+    },
+    {
+      name: "Ram",
+      address: "Bkt",
+      blood: "0+",
+      phone: "987654323456",
+      date: "2022-12-32",
+    },
+  ];
   return (
-    <div id="container">
-      1<Card name="John" address="Ktm" dob={"2002-12-31"} />
-      1<Card name="Mark" address="Bkt" dob={"2001-12-31"} />
-    </div>
+    <>
+      {data.map((item, index) => {
+        console.log(item, index);
+        return <Card {...item} />;
+      })}
+
+      {/* <Card name="Anish" address={"ktm"} /> */}
+    </>
   );
 }
 
